@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         // let commandeId = postCommande(clientId, glaceId, preparateurId, "en cours");
-        console.log("--------------------" + commandeId._id + "-------------------");
+        // console.log("--------------------" + commandeId._id + "-------------------");
         orderForm.reset();
         fetchOrders();
     }
