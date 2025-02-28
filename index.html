@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ice Cream Orders</title>
+        <!-- use style.css -->
+        <link rel="stylesheet" href="style.css">
+        <!-- use script.js -->
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>Ice Cream Orders</h1>
+        
+        <div class="order-form">
+            <h2>Nouvelle command</h2>
+            <form id="orderForm">
+                <div id="client">
+                    <h3>Client : </h3>
+                        <label for="nomClient">Nom:</label>
+                        <input type="text" id="nomClient" name="nomClient" required>
+                    <br>
+                        <label for="prenomClient">Prenom:</label>
+                        <input type="text" id="prenomClient" name="prenomClient" required>
+                    <br>
+                </div>
+
+                <div id="glace">
+                    <h3>Glace : </h3>
+                        <label for="gout">Gout:</label>
+                        <select id="gout" name="gout" required>
+                            <option value="chocolat">Chocolat</option>
+                            <option value="vanille">Vanille</option>
+                            <option value="fraise">Fraise</option>
+                        </select>
+                    <br>
+
+                        <label for="taille">Taille:</label>
+                        <select id="taille" name="taille" required>
+                            <option value="petit">petit</option>
+                            <option value="moyenne">moyenne</option>
+                            <option value="grande">grande</option>
+                    </select>
+                <br>
+                </div>
+                <button type="submit">Commander</button>
+            </form>
+        </div>
+        
+        <div class="orders-list">
+            <h2>Existing Orders</h2>
+            <div id="ordersContainer"></div>
+        </div>
+    </body>
+</html>

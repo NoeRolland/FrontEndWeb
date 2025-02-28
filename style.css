@@ -1,0 +1,25 @@
+* {
+    color: rgb(233, 46, 155);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.order-form, .orders-list {
+    margin-bottom: 20px;
+
+}
+
+.orderForm {
+    display: flex;
+}
+
+
+.order-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
